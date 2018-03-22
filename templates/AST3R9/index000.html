@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+    html{ background:black;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    text-align: center
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+
+}
+.button {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-top: 85%;
+
+}
+
+.button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: 2px solid white;
+}
+
+</style>
+</head>
+<body>
+
+<h2 style="color:white; text-align: center;">AST3R9 calculate Columns</h2>
+
+<div class="row">
+  <div class="column" style="color:white;">
+    <h2>Group 1</h2>
+
+        <input type="button" class="button" value="+">
+  </div>
+  <div>
+    <h2 style="color:white; position: absolute;left: 50%; top: 25%; ">:</h2>
+  </div>
+  <div class="column" style="color:white;">
+    <h2>Group 2</h2>
+
+        <input type="button" class="button" value="+">
+  </div>
+</div>
+
+</body>
+</html>
