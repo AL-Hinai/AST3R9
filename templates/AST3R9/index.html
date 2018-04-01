@@ -1,83 +1,66 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <script>/* QJ */
-    
-    </script>
-    
-    <style>/* CSS */
-        * {
-            box-sizing: border-box;
-        }
-        
-            html{ background:black;
-        }
-        
-        /* Create two equal columns that floats next to each other */
-        .column {
-            float: left;
-            width: 50%;
-            padding: 10px;
-            height: 300px; /* Should be removed. Only for demonstration */
-            text-align: center
-        
-        }
-        
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        
-        
-        }
-        .button {
-            background-color: black;
-            color: white;
-            border: 2px solid white;
-            padding: 5px 15px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            -webkit-transition-duration: 0.4s; /* Safari */
-            transition-duration: 0.4s;
-            cursor: pointer;
-            margin-top: 85%;
-        
-        }
-        
-        .button:hover {
-            background-color: #4CAF50; /* Green */
-            color: white;
-            border: 2px solid white;
-        }
-    
-    </style>
-</head>
+<!doctype html>
+{% load staticfiles %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <title>أستعرض</title>
 
-<body>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <h2 style="color:white; text-align: center;">AST3R9 calculate Columns</h2>
-    <h2 style="color:white; position: absolute;left: 50%; top: 25%; ">:</h2>
-    
-    <div class="row">
-        <div class="column" style="color:white;">
-            <h2>Group 1</h2>
-            <input type="button" class="button" value="+">
+    <!-- Custom styles for this template -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div style="direction:rtl;" class="row">
+            <div>
+                <h4 class="text-white text-right">التْعَريف</h4>
+                <p class="text-muted">التعريف بوقع أستعرض</p>
+            </div>
+          </div>
         </div>
-    
-    
-        <div class="column" style="color:white;">
-            <h2>Group 2</h2>
-            <input type="button" class="button" value="+">
+      </div>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </a>
+        <a href="#" class="navbar-brand d-flex align-items-center">
+            <strong>أسعرض</strong>
+        </a>
         </div>
-    </div>
+      </div>
+    </header>
 
-</body>
+    <main style="direction:rtl;" role="main" >
+    <div class="album py-5 light">
+        <div  class="container">
+          <div class=" text-right">
+            <img src="{% static "images/AST3R9.png" alt="AST3R9 Icon" %}"
+            <img src="{{ MEDIA_URL }}Untitled-2.jpg">
+        </div>
+        </div>
+      </div>
+
+    </main>
+
+
+    <footer class="text-muted">
+    </footer>
+
+  </body>
 </html>
